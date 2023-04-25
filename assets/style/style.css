@@ -1,12 +1,15 @@
 body {
     margin: 0;
+    height: 100%;
     background-color: #131324;
-    padding-left: 100px;
-    padding-right: 100px;
     font-family: Sora;
+    justify-content: center;
+    align-items: center;
 }
 
 .welcome {
+    padding-left: 100px;
+    padding-right: 100px;
     width: 100%vh;
     color: aliceblue;
     font-weight: 800;
@@ -29,6 +32,7 @@ body {
     -webkit-background-clip: text;
     animation: gradient 15s ease infinite;
     margin: 0;
+    text-align: center;
 }
 
 @keyframes gradient {
@@ -57,16 +61,40 @@ strong {
 }
 
 
-header {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 25px 100px 25px 100px;
+    bottom: 0;
+
 }
 
-ul {
-    width: 60%;
+.navbar {
+    padding: 0;
+    margin: 0;
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: end;
+}
+
+.icons-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.icons-list li a {
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: 800;
+    filter: opacity(0.50);
 }
