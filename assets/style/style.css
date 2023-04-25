@@ -1,4 +1,72 @@
-.LogoName div {
+body {
+    margin: 0;
+    background-color: #131324;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: Sora;
+}
+
+.welcome {
     width: 100%vh;
-    background-color: red;
+    color: aliceblue;
+    font-weight: 800;
+    filter: opacity(0.50);
+}
+
+.name-desc {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.name {
+    /*background: linear-gradient(45deg, #ff1493, #10df7e, #652ec7, #fea444, #52fd00, #fea444, #652ec7, #10df7e, #ff1493);*/
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%;
+    font-size: 70px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient 15s ease infinite;
+    margin: 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.Description {
+    color: white;
+}
+
+strong {
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient 15s ease infinite;
+}
+
+
+header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
