@@ -1,10 +1,16 @@
 body {
     margin: 0;
-    height: 100%;
     background-color: #131324;
     font-family: Sora;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .welcome {
@@ -69,14 +75,27 @@ footer {
 
 }
 
+.myname {
+    color: aliceblue;
+    font-weight: 800;
+    filter: opacity(0.50);
+}
+
 .navbar {
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
+}
+
+.navbar li a {
+    color: aliceblue;
+    font-weight: 800;
+    font-size: 13px;
+    text-decoration: none;
 }
 
 .socialmedia {
@@ -89,11 +108,11 @@ footer {
     margin: 0;
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 25px;
 }
 
 .icons-list li a {
-    font-size: 25px;
+    font-size: 20px;
     color: aliceblue;
     font-weight: 800;
     filter: opacity(0.50);
