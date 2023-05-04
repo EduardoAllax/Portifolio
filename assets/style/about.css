@@ -4,6 +4,7 @@ body {
     font-family: Sora;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -24,12 +25,29 @@ body {
     filter: opacity(0.50);
 }
 
-.circle-3-about {
+.circle-about {
     position: fixed;
-    bottom: 70px;
-    left: 10px;
-    height: 210px;
-    width: 210px;
+    height: 250px;
+    width: 250px;
+    left: 5%;
+    top: 25%;
+    background: linear-gradient(-45deg, #ec8363, #c5326b, #288cb1, #14b891);
+    background-size: 400%;
+    font-size: 70px;
+    animation: gradient 15s ease infinite;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 100px;
+    animation: floating 20s ease-in-out infinite, gradient 20s ease infinite;
+    z-index: -4;
+
+}
+
+.circle-2-about {
+    position: fixed;
+    height: 500px;
+    width: 500px;
+    right: 8%;
+    bottom: 8%;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400%;
     font-size: 70px;
@@ -38,23 +56,6 @@ body {
     box-shadow: rgba(0, 0, 0, 1) 0px 5px 100px;
     animation: floating 15s ease-in-out infinite, gradient 20s ease infinite;
     z-index: -4;
-
-}
-
-.circle-about {
-    position: fixed;
-    top: -130px;
-    right: 500px;
-    height: 300px;
-    width: 300px;
-    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400%;
-    font-size: 70px;
-    animation: gradient 15s ease infinite;
-    border-radius: 100%;
-    box-shadow: rgba(0, 0, 0, 1) 0px 5px 100px;
-    animation: floating 10s ease-in-out infinite, gradient 20s ease infinite;
-    z-index: -1;
 
 }
 
@@ -76,14 +77,9 @@ body {
     color: aliceblue;
 }
 
-.about-me-img {
-    height: inherit;
-    width: 200px;
-    background-color: #1ca384;
-}
-
 .about-me-img img {
     width: 200px;
+    border-radius: 15px;
 }
 
 footer {
